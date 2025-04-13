@@ -1,4 +1,25 @@
+'use server';
+
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { toast } from "@/hooks/use-toast";
+
+async function processFormData(formData: FormData) {
+  'use server';
+  const name = formData.get('name') as string;
+
+  console.log('Received form data:', name);
+
+  toast({
+    title: "Form Submitted",
+    description: `You entered: ${name}`,
+  });
+
+  return {
+    message: "Form submitted successfully",
+  }
+}
+
 
 export default function Home() {
   return (
@@ -15,8 +36,12 @@ export default function Home() {
           CliqueStream is a pioneering streaming service, re-imagined for the
           modern creator.
         </p>
-        <Button>Get Started</Button>
+        <form action={processFormData} className="flex flex-col items-center space-y-4">
+          <Input type="text" name="name" placeholder="Enter your name" />
+          <Button type="submit">Get Started</Button>
+        </form>
       </section>
     </div>
   );
 }
+
