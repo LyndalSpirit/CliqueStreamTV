@@ -25,7 +25,7 @@ export default async function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-background text-foreground">
       <header className="p-8 text-center">
-        <h1 className="text-4xl font-bold">CliqueStream</h1>
+        <h1 className="text-4xl font-bold">CLIQUE STREAM TV</h1>
         <p className="text-muted-foreground">
           The future of streaming is here.
         </p>
@@ -44,6 +44,7 @@ export default async function Home() {
     </div>
   );
 }
+
 
 
 
