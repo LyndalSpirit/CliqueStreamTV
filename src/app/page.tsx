@@ -33,7 +33,7 @@ export default async function Home() {
 
       <section className="p-8 text-center">
         <p className="mb-4">
-          CLIQUE STREAM TV, Fomally CLIQUE TV is a pioneering streaming service, re-imagined for the modern creator
+          CLIQUE STREAM TV, formally CLIQUE TV is a pioneering streaming service, re-imagined for the modern creator!
         </p>
         <form action={processFormData} className="flex flex-col items-center space-y-4">
           <Input type="text" name="name" placeholder="Enter your name" />
@@ -43,7 +43,6 @@ export default async function Home() {
     </div>
   );
 }
-
 
 
 
