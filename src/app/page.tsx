@@ -27,7 +27,7 @@ export default async function Home() {
       <header className="p-8 text-center">
         <h1 className="text-4xl font-bold">CLIQUE STREAM TV</h1>
         <p className="text-muted-foreground">
-          The future of streaming is here.
+          You've just been CLIQUED!
         </p>
       </header>
 
@@ -44,6 +44,7 @@ export default async function Home() {
     </div>
   );
 }
+
 
 
 
