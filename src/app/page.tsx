@@ -21,7 +21,7 @@ async function processFormData(formData: FormData) {
 }
 
 
-export default function Home() {
+export default async function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-background text-foreground">
       <header className="p-8 text-center">
@@ -44,4 +44,6 @@ export default function Home() {
     </div>
   );
 }
+
+
 
