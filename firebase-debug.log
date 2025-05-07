@@ -1,0 +1,114 @@
+[debug] [2025-04-25T13:29:36.569Z] ----------------------------------------------------------------------
+[debug] [2025-04-25T13:29:36.573Z] Command:       /nix/store/ixbb20farqh1f4fqbmsn6b1ixn8mc8ij-nodejs-20.18.1/bin/node /nix/store/984bjqzf7prsischdc86jmqbn4ha5yxd-firebase-tools-14.2.0/lib/node_modules/firebase-tools/lib/bin/firebase.js init hosting
+[debug] [2025-04-25T13:29:36.574Z] CLI Version:   14.2.0
+[debug] [2025-04-25T13:29:36.575Z] Platform:      linux
+[debug] [2025-04-25T13:29:36.575Z] Node Version:  v20.18.1
+[debug] [2025-04-25T13:29:36.575Z] Time:          Fri Apr 25 2025 13:29:36 GMT+0000 (Coordinated Universal Time)
+[debug] [2025-04-25T13:29:36.575Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-04-25T13:29:36.587Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-25T13:29:36.588Z] > authorizing via signed-in user (lyndalspirit@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/user/studio
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2025-04-25T13:30:21.124Z] Checked if tokens are valid: true, expires at: 1745590956819
+[debug] [2025-04-25T13:30:21.124Z] Checked if tokens are valid: true, expires at: 1745590956819
+[debug] [2025-04-25T13:30:21.132Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2025-04-25T13:30:21.132Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"cliquestreamtv-beta","name":"cliquestreamtv-beta"}
+[debug] [2025-04-25T13:30:21.523Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2025-04-25T13:30:21.524Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/create_project.global.5815217531433611695"}
+[debug] [2025-04-25T13:30:21.526Z] Checked if tokens are valid: true, expires at: 1745590956819
+[debug] [2025-04-25T13:30:21.526Z] Checked if tokens are valid: true, expires at: 1745590956819
+[debug] [2025-04-25T13:30:21.526Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.5815217531433611695 [none]
+[debug] [2025-04-25T13:30:21.608Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.5815217531433611695 200
+[debug] [2025-04-25T13:30:21.608Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.5815217531433611695 {"name":"operations/create_project.global.5815217531433611695"}
+[debug] [2025-04-25T13:30:22.109Z] [Project Creation Poller] Retrying task index 0
+[debug] [2025-04-25T13:30:22.112Z] Checked if tokens are valid: true, expires at: 1745590956819
+[debug] [2025-04-25T13:30:22.112Z] Checked if tokens are valid: true, expires at: 1745590956819
+[debug] [2025-04-25T13:30:22.113Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.5815217531433611695 [none]
+[debug] [2025-04-25T13:30:22.190Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.5815217531433611695 200
+[debug] [2025-04-25T13:30:22.194Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.5815217531433611695 {"name":"operations/create_project.global.5815217531433611695"}
+[debug] [2025-04-25T13:30:23.197Z] [Project Creation Poller] Retrying task index 0
+[debug] [2025-04-25T13:30:23.197Z] Checked if tokens are valid: true, expires at: 1745590956819
+[debug] [2025-04-25T13:30:23.197Z] Checked if tokens are valid: true, expires at: 1745590956819
+[debug] [2025-04-25T13:30:23.198Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.5815217531433611695 [none]
+[debug] [2025-04-25T13:30:23.268Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.5815217531433611695 200
+[debug] [2025-04-25T13:30:23.269Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.5815217531433611695 {"name":"operations/create_project.global.5815217531433611695","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"200877947727","projectId":"cliquestreamtv-beta","lifecycleState":"ACTIVE","name":"cliquestreamtv-beta","createTime":"2025-04-25T13:30:22.452205Z"}}
+[debug] [2025-04-25T13:30:23.274Z] Checked if tokens are valid: true, expires at: 1745590956819
+[debug] [2025-04-25T13:30:23.274Z] Checked if tokens are valid: true, expires at: 1745590956819
+[debug] [2025-04-25T13:30:23.274Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/cliquestreamtv-beta:addFirebase [none]
+[debug] [2025-04-25T13:30:24.924Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/cliquestreamtv-beta:addFirebase 200
+[debug] [2025-04-25T13:30:24.924Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/cliquestreamtv-beta:addFirebase {"name":"operations/workflows/ZTJlMWUxZDEtZGMyZi00NjFlLWEyNzktMDk1ZjIxOTVhMzlk"}
+[debug] [2025-04-25T13:30:24.927Z] Checked if tokens are valid: true, expires at: 1745590956819
+[debug] [2025-04-25T13:30:24.927Z] Checked if tokens are valid: true, expires at: 1745590956819
+[debug] [2025-04-25T13:30:24.927Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZTJlMWUxZDEtZGMyZi00NjFlLWEyNzktMDk1ZjIxOTVhMzlk [none]
+[debug] [2025-04-25T13:30:34.591Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZTJlMWUxZDEtZGMyZi00NjFlLWEyNzktMDk1ZjIxOTVhMzlk 200
+[debug] [2025-04-25T13:30:34.591Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZTJlMWUxZDEtZGMyZi00NjFlLWEyNzktMDk1ZjIxOTVhMzlk {"name":"operations/workflows/ZTJlMWUxZDEtZGMyZi00NjFlLWEyNzktMDk1ZjIxOTVhMzlk"}
+[debug] [2025-04-25T13:30:35.093Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2025-04-25T13:30:35.093Z] Checked if tokens are valid: true, expires at: 1745590956819
+[debug] [2025-04-25T13:30:35.094Z] Checked if tokens are valid: true, expires at: 1745590956819
+[debug] [2025-04-25T13:30:35.094Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZTJlMWUxZDEtZGMyZi00NjFlLWEyNzktMDk1ZjIxOTVhMzlk [none]
+[debug] [2025-04-25T13:30:35.559Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZTJlMWUxZDEtZGMyZi00NjFlLWEyNzktMDk1ZjIxOTVhMzlk 200
+[debug] [2025-04-25T13:30:35.559Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZTJlMWUxZDEtZGMyZi00NjFlLWEyNzktMDk1ZjIxOTVhMzlk {"name":"operations/workflows/ZTJlMWUxZDEtZGMyZi00NjFlLWEyNzktMDk1ZjIxOTVhMzlk"}
+[debug] [2025-04-25T13:30:36.560Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2025-04-25T13:30:36.561Z] Checked if tokens are valid: true, expires at: 1745590956819
+[debug] [2025-04-25T13:30:36.562Z] Checked if tokens are valid: true, expires at: 1745590956819
+[debug] [2025-04-25T13:30:36.562Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZTJlMWUxZDEtZGMyZi00NjFlLWEyNzktMDk1ZjIxOTVhMzlk [none]
+[debug] [2025-04-25T13:30:36.749Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZTJlMWUxZDEtZGMyZi00NjFlLWEyNzktMDk1ZjIxOTVhMzlk 200
+[debug] [2025-04-25T13:30:36.750Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZTJlMWUxZDEtZGMyZi00NjFlLWEyNzktMDk1ZjIxOTVhMzlk {"name":"operations/workflows/ZTJlMWUxZDEtZGMyZi00NjFlLWEyNzktMDk1ZjIxOTVhMzlk"}
+[debug] [2025-04-25T13:30:38.752Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2025-04-25T13:30:38.752Z] Checked if tokens are valid: true, expires at: 1745590956819
+[debug] [2025-04-25T13:30:38.752Z] Checked if tokens are valid: true, expires at: 1745590956819
+[debug] [2025-04-25T13:30:38.753Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZTJlMWUxZDEtZGMyZi00NjFlLWEyNzktMDk1ZjIxOTVhMzlk [none]
+[debug] [2025-04-25T13:30:39.142Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZTJlMWUxZDEtZGMyZi00NjFlLWEyNzktMDk1ZjIxOTVhMzlk 200
+[debug] [2025-04-25T13:30:39.143Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZTJlMWUxZDEtZGMyZi00NjFlLWEyNzktMDk1ZjIxOTVhMzlk {"name":"operations/workflows/ZTJlMWUxZDEtZGMyZi00NjFlLWEyNzktMDk1ZjIxOTVhMzlk","done":true,"response":{"@type":"type.googleapis.com/google.firebase.service.v1beta1.FirebaseProject","projectId":"cliquestreamtv-beta","projectNumber":"200877947727","displayName":"cliquestreamtv-beta","name":"projects/cliquestreamtv-beta","resources":{"hostingSite":"cliquestreamtv-beta"}}}
+[info] 
+[info] 🎉🎉🎉 Your Firebase project is ready! 🎉🎉🎉
+[info] 
+[info] Project information:
+[info]    - Project ID: cliquestreamtv-beta
+[info]    - Project Name: cliquestreamtv-beta
+[info] 
+[info] Firebase console is available at
+[info] https://console.firebase.google.com/project/cliquestreamtv-beta/overview
+[info] i  Using project cliquestreamtv-beta (cliquestreamtv-beta) 
+[info] 
+=== Hosting Setup
+[debug] [2025-04-25T13:30:39.164Z] Checked if tokens are valid: true, expires at: 1745590956819
+[debug] [2025-04-25T13:30:39.164Z] Checked if tokens are valid: true, expires at: 1745590956819
+[debug] [2025-04-25T13:30:39.165Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cliquestreamtv-beta [none]
+[debug] [2025-04-25T13:30:39.536Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/cliquestreamtv-beta 200
+[debug] [2025-04-25T13:30:39.536Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/cliquestreamtv-beta {"projectId":"cliquestreamtv-beta","projectNumber":"200877947727","displayName":"cliquestreamtv-beta","name":"projects/cliquestreamtv-beta","resources":{"hostingSite":"cliquestreamtv-beta"},"state":"ACTIVE","etag":"1_6f05e6db-fa79-4002-9e89-690cddae2f10"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2025-04-25T13:32:32.065Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2025-04-25T13:32:32.099Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2025-04-25T13:32:32.103Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"11.6.1","browserURL":"https://www.gstatic.com/firebasejs/11.6.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/11.6.1/firebase.tgz"},"live":{"version":"11.6","browserURL":"https://www.gstatic.com/firebasejs/live/11.6/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/11.6/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/11.6.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/11.6.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/11.6.1/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/11.6.1/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/11.6.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/11.6.1/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/11.6.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/11.6.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/11.6.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/11.6.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/11.6.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/11.6.1/firebase-database.js","vertexai":"https://www.gstatic.com/firebasejs/11.6.1/firebase-vertexai.js","data-connect":"https://www.gstatic.com/firebasejs/11.6.1/firebase-data-connect.js","firestore.memory":"https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.memory.js"}}
+[info] ✔  Wrote y/index.html 
+[info] 
+[info] i  Detected a .git folder at /home/user/studio 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=357496812&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
