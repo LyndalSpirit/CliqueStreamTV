@@ -1,4 +1,4 @@
-# **App Name**: CliqueStream
+# **App Name**: CliqueStreamTV
 
 ## Core Features:
 
